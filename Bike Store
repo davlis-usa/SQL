@@ -1,0 +1,39 @@
+-- CREATE a Bike Store Database
+
+CREATE TABLE store (id integer PRIMARY KEY, gender TEXT, bike_brand TEXT, bike_color TEXT, bike_type TEXT, price INTEGER);
+
+INSERT INTO store VALUES (1, "Mens", "Diamond Back", "blue", "road", 250);
+INSERT INTO store VALUES (2, "Mens", "Specialized", "blue", "road", 450 );
+INSERT INTO store VALUES (3, "Mens", "Cannondale", "blue", "road", 550);
+INSERT INTO store VALUES (4, "Mens", "Shwinn", "blue", "road", 150);
+INSERT INTO store VALUES (5, "Womens", "Trek", "blue", "road", 350);
+INSERT INTO store VALUES (6, "Mens", "Diamond Back", "red", "road", 250);
+INSERT INTO store VALUES (7, "Mens", "Specialized", "red", "road", 450 );
+INSERT INTO store VALUES (8, "Mens", "Cannondale", "red", "road", 550);
+INSERT INTO store VALUES (9, "Mens", "Shwinn", "red", "road", 150);
+INSERT INTO store VALUES (10, "Womens", "Trek", "red", "road", 350);
+INSERT INTO store VALUES (11, "Mens", "Diamond Back", "black", "road", 250);
+INSERT INTO store VALUES (12, "Mens", "Specialized", "black", "road", 450 );
+INSERT INTO store VALUES (13, "Mens", "Cannondale", "black", "road", 550);
+INSERT INTO store VALUES (14, "Mens", "Shwinn", "black", "road", 150);
+INSERT INTO store VALUES (15, "Womens", "Trek", "black", "road", 350);
+
+
+-- display the database order by price asc
+SELECT * FROM store
+ORDER by PRICE ASC;
+
+
+-- display the database where gender shows womens bikes
+SELECT * FROM Store
+WHERE Gender = "Womens";
+
+-- display all bikes that show a price of $ 250.00 
+SELECT * FROM store
+WHERE price = 250;
+
+-- show max price from store
+SELECT MAX (price) from store
+
+
+
